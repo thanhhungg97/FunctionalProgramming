@@ -1,6 +1,6 @@
-package chapter2
+package chapter3
 
-import chapter2.List
+import chapter3.List
 
 object Main {
   def main(args: Array[String]): Unit = {

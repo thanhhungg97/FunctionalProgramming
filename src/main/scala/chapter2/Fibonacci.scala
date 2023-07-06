@@ -1,4 +1,4 @@
-package chapter1
+package chapter2
 
 object Fibonacci {
   def fib(n: Int): Int = {
