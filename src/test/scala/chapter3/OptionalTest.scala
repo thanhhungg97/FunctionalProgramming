@@ -1,5 +1,6 @@
 package chapter3
 
+import chapter4.Optional
 import org.scalatest.funsuite.AnyFunSuiteLike
 
 class OptionalTest extends AnyFunSuiteLike {
@@ -16,14 +17,14 @@ class OptionalTest extends AnyFunSuiteLike {
 
   test("testFilter") {
     val filter = Optional.apply(5).filter((item: Int) => item % 2 == 0)
-    assert(None == filter)
+    assert(chapter4.None == filter)
 
   }
 
 
 
   test("testGetOrElse") {
-    val orElse = None.getOrElse(5)
+    val orElse = chapter4.None.getOrElse(5)
     assert(5 == orElse)
 
   }
